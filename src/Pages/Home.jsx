@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from '../Components/NavBar'
 import HomeBanner from '../Components/HomeBanner'
+import HomeCars from '../Components/HomeCars'
 
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
     <div>
       <NavBar />
       <HomeBanner />
+      <HomeCars />
     </div>
   )
 }
