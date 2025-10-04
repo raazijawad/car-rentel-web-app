@@ -91,7 +91,7 @@ const NavBar = () => {
     <nav
       className={`${styles.nav.base} ${
         scrolled ? styles.nav.scrolled : styles.nav.notScrolled
-      } fixed top-0 left-0 w-full z-50`}
+      } fixed top-0 left-0 w-full z-50 bg-transparent`}
       aria-label="Main navigation"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
