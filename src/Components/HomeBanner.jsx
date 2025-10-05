@@ -1,6 +1,7 @@
 // src/components/HeroSleek.jsx
 import React, { useEffect, useRef, useState } from "react";
 import img1 from "../assets/hero.png";
+import vezalHome from "../assets/vezelhome.png"
 import { heroStyles as styles } from "../assets/dummyStyles";
 
 export default function HeroSleek() {

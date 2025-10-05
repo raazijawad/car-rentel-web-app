@@ -18,7 +18,7 @@ import redVezel from "../assets/redVezel.jpg";
 const carsData = [
   {
     id: 1,
-    name: "Toyota Corolla",
+    name: "Honda Fit Gp5",
     type: "Compact Sedan",
     price: 3000,
     image: gp5 ,
@@ -30,7 +30,7 @@ const carsData = [
   },
   {
     id: 2,
-    name: "Honda Civic",
+    name: "Honda Vezel RS",
     type: "Compact Sedan",
     price: 2500,
     image: vezal,
@@ -42,7 +42,7 @@ const carsData = [
   },
   {
     id: 3,
-    name: "Volkswagen Golf",
+    name: "Honda Fit Gp5",
     type: "Hatchback",
     price: 5000,
     image: gp5s,
@@ -54,7 +54,7 @@ const carsData = [
   },
   {
     id: 4,
-    name: "Hyundai Elantra",
+    name: "Honda Vezel RS",
     type: "Compact Sedan",
     price: 2000,
     image: redVezel,
@@ -66,7 +66,7 @@ const carsData = [
   },
   {
     id: 5,
-    name: "Nissan Altima",
+    name: "Toyota Corella",
     type: "Midsize Sedan",
     price: 7000,
     image: corella,
@@ -78,7 +78,7 @@ const carsData = [
   },
   {
     id: 6,
-    name: "Chevrolet Cruze",
+    name: "Toyota Aqua",
     type: "Compact Sedan",
     price: 10000,
     image: aqua,
