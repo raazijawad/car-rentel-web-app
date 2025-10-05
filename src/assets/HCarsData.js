@@ -5,6 +5,15 @@ import HC3 from "../assets/HC3.png";
 import HC4 from "../assets/HC4.png";
 import HC5 from "../assets/HC5.png";
 import HC6 from "../assets/HC6.png";
+import gp5 from "../assets/gp5 ep.jpg";
+import corella from "../assets/corella.jpg";
+import gp5s from "../assets/gp5s.jpg";
+import vezal from "../assets/vezal.jpg";
+import stingray from "../assets/stingray.jpg";
+import aqua from "../assets/aqua.jpg";
+import redVezel from "../assets/redVezel.jpg";
+
+
 
 const carsData = [
   {
@@ -12,7 +21,7 @@ const carsData = [
     name: "Toyota Corolla",
     type: "Compact Sedan",
     price: 3000,
-    image: HC1,
+    image: gp5 ,
     description: "Reliable, fuel-efficient commuter.",
     seats: 5,
     fuel: "Gasoline",
@@ -24,7 +33,7 @@ const carsData = [
     name: "Honda Civic",
     type: "Compact Sedan",
     price: 2500,
-    image: HC2,
+    image: vezal,
     description: "Sporty handling with modern tech.",
     seats: 5,
     fuel: "Gasoline",
@@ -36,7 +45,7 @@ const carsData = [
     name: "Volkswagen Golf",
     type: "Hatchback",
     price: 5000,
-    image: HC3,
+    image: gp5s,
     description: "Practical hatch with punchy engine.",
     seats: 5,
     fuel: "Gasoline",
@@ -48,7 +57,7 @@ const carsData = [
     name: "Hyundai Elantra",
     type: "Compact Sedan",
     price: 2000,
-    image: HC4,
+    image: redVezel,
     description: "Smooth ride, lots of tech features.",
     seats: 5,
     fuel: "Gasoline",
@@ -60,7 +69,7 @@ const carsData = [
     name: "Nissan Altima",
     type: "Midsize Sedan",
     price: 7000,
-    image: HC5,
+    image: corella,
     description: "Comfortable and spacious daily driver.",
     seats: 5,
     fuel: "Gasoline",
@@ -72,7 +81,7 @@ const carsData = [
     name: "Chevrolet Cruze",
     type: "Compact Sedan",
     price: 10000,
-    image: HC6,
+    image: aqua,
     description: "Efficient cruiser with solid handling.",
     seats: 5,
     fuel: "Diesel",
