@@ -127,9 +127,9 @@ const HomeCars = () => {
                                 </button>
                             </div>
 
-
+                            <div className={styles.accentBlur} />
                         </div>
-                    )
+                    );
                 })}
             </div>
         </div>
