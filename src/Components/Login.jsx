@@ -3,7 +3,7 @@ import { loginStyles } from '../assets/dummyStyles'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { FaArrowLeft, FaEye, FaEyeSlash, FaLock, FaUser } from 'react-icons/fa';
 import logo from "../assets/logocar.png";
-import { ToastContainer } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 
 const Login = () => {
 
