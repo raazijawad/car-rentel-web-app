@@ -44,7 +44,7 @@ const Contact = () => {
             `Phone: ${formData.phone}%0A` +
             `Car Type: ${formData.carType}%0A` +
             `Message: ${formData.message}`;
-        window.open(`https://wa.me/+918299431275?text=${whatsappMessage}`, '_blank');
+        window.open(`https://wa.me/+94775258589?text=${whatsappMessage}`, '_blank');
 
     }
     return (
