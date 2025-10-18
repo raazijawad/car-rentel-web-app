@@ -12,7 +12,12 @@ import vezal from "../assets/vezal.jpg";
 import stingray from "../assets/stingray.jpg";
 import aqua from "../assets/aqua.jpg";
 import redVezel from "../assets/redVezel.jpg";
-
+import gp1 from "../assets/gp1.jpg";
+import blcoro from "../assets/blcoro.jpg";
+import gp5l from "../assets/gp5l.jpg";
+import sorento from "../assets/sorento.jpg";
+import vezal3 from "../assets/vezal3.jpg";
+import swiftrs from "../assets/swiftrs.jpg";
 
 
 const carsData = [
@@ -82,6 +87,78 @@ const carsData = [
     type: "Compact Sedan",
     price: 10000,
     image: aqua,
+    description: "Efficient cruiser with solid handling.",
+    seats: 5,
+    fuel: "Diesel",
+    mileage: "34 MPG",
+    transmission: "Manual"
+  },
+  {
+    id: 7,
+    name: "Honda Gp1",
+    type: "Compact Sedan",
+    price: 10000,
+    image: gp1,
+    description: "Efficient cruiser with solid handling.",
+    seats: 5,
+    fuel: "Diesel",
+    mileage: "34 MPG",
+    transmission: "Manual"
+  },
+  {
+    id: 7,
+    name: "Corolla",
+    type: "Compact Sedan",
+    price: 10000,
+    image: blcoro,
+    description: "Efficient cruiser with solid handling.",
+    seats: 5,
+    fuel: "Diesel",
+    mileage: "34 MPG",
+    transmission: "Manual"
+  },
+  {
+    id: 8,
+    name: "Honda Gp5",
+    type: "Compact Sedan",
+    price: 10000,
+    image: gp5l,
+    description: "Efficient cruiser with solid handling.",
+    seats: 5,
+    fuel: "Diesel",
+    mileage: "34 MPG",
+    transmission: "Manual"
+  },
+  {
+    id: 9,
+    name: "Sorento",
+    type: "Compact Sedan",
+    price: 10000,
+    image: sorento,
+    description: "Efficient cruiser with solid handling.",
+    seats: 5,
+    fuel: "Diesel",
+    mileage: "34 MPG",
+    transmission: "Manual"
+  },
+  {
+    id: 10,
+    name: "Honda Vezel RS",
+    type: "Compact Sedan",
+    price: 10000,
+    image: vezal3,
+    description: "Efficient cruiser with solid handling.",
+    seats: 5,
+    fuel: "Diesel",
+    mileage: "34 MPG",
+    transmission: "Manual"
+  },
+  {
+    id: 11,
+    name: "Swift RS",
+    type: "Compact Sedan",
+    price: 10000,
+    image: swiftrs,
     description: "Efficient cruiser with solid handling.",
     seats: 5,
     fuel: "Diesel",

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { contactPageStyles as s } from '../assets/dummyStyles'
-import { FaCalendarAlt, FaClock, FaEnvelope, FaMapMarkedAlt, FaWhatsapp } from 'react-icons/fa';
+import { FaCalendarAlt, FaCar, FaClock, FaComment, FaEnvelope, FaMapMarkedAlt, FaPhone, FaUser, FaWhatsapp } from 'react-icons/fa';
+import { IoIosSend } from 'react-icons/io';
 
 const Contact = () => {
 
@@ -107,16 +108,16 @@ const Contact = () => {
                                 ].map((info, i) => (
                                     <div key={i} className={s.infoItem}>
                                         <div className={s.iconContainer(info.color)}>
-                                            <info.icon className={i ===0 ? 'text-lg text-green-400' : 'text-orange-400 text-lg'} />
+                                            <info.icon className={i === 0 ? 'text-lg text-green-400' : 'text-orange-400 text-lg'} />
                                         </div>
 
                                         <div>
-                                            <h3 className={s.infoLabel}> 
+                                            <h3 className={s.infoLabel}>
                                                 {info.label}
                                             </h3>
                                             <p className={s.infoValue}>
                                                 {info.value}
-                                                {i === 2 && <span className='block text-gray-500'>Sunday: 10AM-6PM</span> }
+                                                {i === 2 && <span className='block text-gray-500'>Sunday: 10AM-6PM</span>}
                                             </p>
                                         </div>
                                     </div>
@@ -126,16 +127,101 @@ const Contact = () => {
                             <div className={s.offerContainer}>
                                 <div className="items-center flex">
                                     <FaCalendarAlt className={s.offerIcon} />
+                                    <span className={s.offerTitle}>Special Offer!</span>
                                 </div>
+
+                                <p className={s.offerText}>
+                                    Book for 3+ days and get 10% discount
+                                </p>
                             </div>
                         </div>
                     </div>
+
+                    {/* FORM CARD */}
+                    <div className={s.formCard}>
+                        <div className={s.formCircle1}></div>
+                        <div className={s.formCircle2}></div>
+
+                        <div className='mb-4'>
+                            <h2 className={s.formTitle}>
+                                <IoIosSend className={s.infoIcon} /> Send Your Inquiry
+                            </h2>
+                            <p className={s.subtitle}>
+                                Fill out the form and we'll get to you promptly
+                            </p>
+                        </div>
+
+                        <form onSubmit={handleSubmit} className={s.form}>
+                            <div className={s.formGrid}>
+                                {['name', 'email', 'phone', 'carType'].map((field) => {
+                                    const icons = {
+                                        name: FaUser,
+                                        email: FaEnvelope,
+                                        phone: FaPhone,
+                                        carType: FaCar
+                                    };
+
+                                    const placeholders = {
+                                        name: 'Full Name',
+                                        email: 'Email Address',
+                                        phone: 'Phone Number',
+                                        carType: 'Select Car Type'
+                                    };
+
+                                    return (
+                                        <div key={(field)} className={s.inputContainer}>
+                                            <div className={s.inputIcon}>
+                                                {React.createElement(icons[field])}
+                                            </div>
+
+                                            {field !== 'carType' ? (
+                                                <input type={field === "email" ? 'email' : field === 'phone' ? 'tel' : 'text'}
+                                                    name={field}
+                                                    value={formData[field]} onChange={handleChange} onFocus={() => handleFocus(field)} onBlur={handleBlur} required placeholder={placeholders[field]} className={s.input(activeField === field)} />
+                                            ) : (
+                                            <select name="carType" value={formData.carType} onChange={handleChange} onFocus={() => handleFocus(field)} onBlur={handleBlur} required className={s.select(activeField === field)}>
+                                                <option value="">Select Car Type</option>
+                                                {['Economy', 'SUV', 'Luxury', 'Van', 'Sports Car', 'Convertible'].map((opt) => (
+                                                    <option key={opt} value={opt} className='bg-gray-800 cursor-pointer'>
+                                                        {opt}
+                                                    </option>
+                                                ))}
+                                            </select>
+                                            )}
+                                        </div>
+                                    );
+                                })}
+                            </div>
+
+                            <div className='relative'>
+                                <div className={s.textareaIcon}>
+                                    <FaComment />
+                                </div>
+
+                                <textarea name="message" value={formData.message} onChange={handleChange} onFocus={() => handleFocus('message')} onBlur={handleBlur} required rows='3' placeholder='Tell us about your rental needs' className={s.textarea(activeField === 'message')}></textarea>
+                            </div>
+
+                            <button type='submit' className={s.submitButton}>
+                                Send Message
+                                <FaWhatsapp className={s.whatsappIcon} />
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
+
+            {/* Fade-in Animation */}
+      <style>{`
+        @keyframes fadeIn { 
+          from { opacity:0; transform:translateY(10px);} 
+          to { opacity:1; transform:translateY(0);} 
+        }
+        .animate-fadeIn { animation: fadeIn 0.4s ease-out forwards; }
+      `}</style>
 
         </div>
     )
 
 }
 
-export default Contact
+export default Contact;
